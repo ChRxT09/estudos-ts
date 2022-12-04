@@ -1,0 +1,24 @@
+{
+  "name": "estudos-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "tscom": "tsc basics.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChRxT09/estudos-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChRxT09/estudos-ts/issues"
+  },
+  "homepage": "https://github.com/ChRxT09/estudos-ts#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
