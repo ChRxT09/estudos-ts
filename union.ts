@@ -1,11 +1,23 @@
+
+
+
+
+
+
+
+
+type Combinable = number | string;
+type Conversion = 'as-number' | 'as-text'
+
+
 // UNION TYPES
 
 function combine(
-	n1: number | string,
-	n2: number | string,
-	resultConversion: 'as-number' | 'as-text'
+	n1: Combinable,
+	n2: Combinable,
+	resultConversion: Conversion
 ) {
-	let result;
+	let result: Combinable;
 	if (typeof n1 === "number" && typeof n2 === "number" || resultConversion === 'as-number') {
 		result = + n1 + + n2;
 	} else {
