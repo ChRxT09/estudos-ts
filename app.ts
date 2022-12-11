@@ -1,13 +1,15 @@
-function add(n1: number, n2: number): number {
-  return n1 + n2
+let userInput: unknown;
+let userName: string;
+
+function generateError(message: string, errorCorde: number): never {
+	throw { message, errorCorde };
 }
 
+userInput = 5;
+userInput = "adasd";
 
-// bad practice == TS inferes the type of the variable
-const a : number = 123
-const b : number = 456
+if (typeof userInput === "string") {
+	userName = userInput;
+}
 
-const result : number = add(a, b)
-
-console.log(result)
-
+generateError("AN error ocurred", 500);
